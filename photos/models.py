@@ -4,7 +4,7 @@ from django.db import models
 class Image(models.Model):
     image_name = models.CharField(max_length=255)
     description = models.TextField()
-    image_file = models.ImageField(upload_to = 'images/', default='images/beagle.jpg')
+    image_file = models.ImageField(upload_to = 'images/', default='images/image01.jpg')
     location = models.ForeignKey(Location)
     category = models.ForeignKey(Category)
     pub_date = models.DateTimeField(auto_now_add=True)
