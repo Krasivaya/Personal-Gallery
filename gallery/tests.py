@@ -3,7 +3,7 @@ from .models import Category, Image, Location
 # Create your tests here.
 
 class CategoryTestCase(TestCase):
-    
+     
     def setUp(self):
         self.category = Category(category = 'Person')
         
