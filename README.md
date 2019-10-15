@@ -37,7 +37,7 @@ No bug known. If you found any, please contact!
 Email: semwagacarine@gmail.com
 
 ### Live site
-[Personal Gallery](https://krasivaya-personal-gallery.herokuapp.com/)
+[Personal Gallery](https://krasivaya-personal-gallery.herokuapp.com/) 
 
 ### License
 This project is under the [MIT](https://github.com/Krasivaya/github/blob/master/LICENSE) license.
