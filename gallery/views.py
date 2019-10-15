@@ -7,9 +7,6 @@ from .models import Location, Image, Category
 from django.core.exceptions import ObjectDoesNotExist
 
 
-# Create your views here.
-
-
 def index(request):
     date = dt.date.today()
     images = Image.get_images()

@@ -12,7 +12,7 @@
             <div class="grid-item">
                 <h3><a class="font-weight-bold mb-3 black-text">{{ image.image_name }}</a></h3>
 
-              <img src="{{image.image_file.url}}" height="500px" width="100%" data-toggle="modal" data-target="#basicExampleModal"/>
+              <img src="{{image.image_file.url}}" width="40%" data-toggle="modal" data-target="#basicExampleModal"/>
             </div>
 
         
@@ -38,7 +38,7 @@
                   
             <div class=""><a href="{{image.image_file.url}}" data-lightbox="photos">
               <figure class="">
-                <img class="img-fluid" src="{{image.image_file.url}}"></a>
+                <img class="img-fluid" width="50%"  src="{{image.image_file.url}}"></a>
                   <figcaption>
                       <!-- Image title -->
                       <h3><a class="font-weight-bold mb-3 black-text" href="/image/{{image.id}}">{{ image.image_name }}</a></h3>
@@ -49,7 +49,7 @@
                         <span> Category: <a href="/category/{{image.category}}"> {{ image.category}} </a></span>
                       </p>
                       <!-- The text field -->
-                          Copy Image Link: <input class="form-control form-control-sm" type="text" value="https://jogallery.herokuapp.com/image/{{image.id}}" id="{{image.id}}" readonly="readonly">
+                          Copy Image Link: <input class="form-control form-control-sm" type="text" value="https://krasivaya-personal-gallery.herokuapp.com/image/{{image.id}}" id="{{image.id}}" readonly="readonly">
 
                           <!-- The button used to copy the text -->
                          

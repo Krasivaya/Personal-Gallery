@@ -5,7 +5,7 @@ from .models import Category, Image, Location
 class CategoryTestCase(TestCase):
     
     def setUp(self):
-        self.category = Category(category = 'Animals')
+        self.category = Category(category = 'Person')
         
     def test_instance(self):
         self.assertTrue(isinstance(self.category, Category))
@@ -17,7 +17,7 @@ class CategoryTestCase(TestCase):
         
     def test_search_category(self):
         self.category.save_category()
-        images = Category.objects.filter(category__icontains='animals')
+        images = Category.objects.filter(category__icontains='person')
         self.assertTrue(self.category, images)
         
         
@@ -25,7 +25,7 @@ class CategoryTestCase(TestCase):
 class LocationTestCase(TestCase):
     
     def setUp(self):
-        self.location = Location(location = 'Lagos')
+        self.location = Location(location = 'Kigali')
         
     def test_instance(self):
         self.assertTrue(isinstance(self.location, Location))
@@ -45,14 +45,14 @@ class ImageTestCase(TestCase):
     
     def setUp(self):
         # Creating a new location and saving it
-        self.new_location = Location(location = 'Lagos')
+        self.new_location = Location(location = 'Kigali')
         self.new_location.save()
         
-        self.category = Category(category = 'Animals')
+        self.category = Category(category = 'Person')
         self.category.save()
         
         # Creating a new Image and saving it
-        self.image= Image(image_name = 'Beagle', description ='Lovely dog', image_file ='images/beagle.jpg', location = self.new_location, category = self.category)
+        self.image= Image(image_name = 'Image01', description ='In_glasses', image_file ='images/image01.jpg', location = self.new_location, category = self.category)
         self.image.save_image()
 
 
