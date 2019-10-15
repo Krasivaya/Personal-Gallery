@@ -3,7 +3,7 @@ import sys
 import django_heroku
 import dj_database_url
 from decouple import config, Csv
-
+ 
 # add your project directory to the sys.path
 project_home = u'/home/rhpt/photos'
 
